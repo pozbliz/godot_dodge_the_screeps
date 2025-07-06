@@ -12,6 +12,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ieysi"]
 shader = ExtResource("2_gfurk")
 shader_parameter/hit_blink = false
+shader_parameter/tint_color = Color(1, 1, 1, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pcqmr"]
 animations = [{

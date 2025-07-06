@@ -1,3 +1,4 @@
+CollisionPolygon2D
 AnimatedSprite2D
 VisibleOnScreenEnabler2D
 Timer
@@ -12,4 +13,3 @@ CanvasLayer
 PathFollow2D
 Path2D
 Marker2D
-Node

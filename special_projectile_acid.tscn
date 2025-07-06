@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cydoflt2ntapf"]
+
+[ext_resource type="PackedScene" uid="uid://bp1xkcytschfx" path="res://default_projectile.tscn" id="1_fyxs0"]
+[ext_resource type="Texture2D" uid="uid://c3adpqls2ggt3" path="res://art/projectiles/Green Effect and Bullet 16x16.png" id="2_t7c7p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chqo5"]
+atlas = ExtResource("2_t7c7p")
+region = Rect2(160, 48, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qs2vg"]
+atlas = ExtResource("2_t7c7p")
+region = Rect2(176, 48, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg5nv"]
+atlas = ExtResource("2_t7c7p")
+region = Rect2(192, 48, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_26lmc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_chqo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qs2vg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mg5nv")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Projectile" instance=ExtResource("1_fyxs0")]
+speed = 500
+damage = 3
+lifetime = 1.0
+cooldown = 3.0
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_26lmc")
+speed_scale = 0.5
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(2.5, 0)
+shape = null
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="2"]
+polygon = PackedVector2Array(-3, -22, 10, 0, -3, 22, -10, 22, 0, 0, -10, -22)

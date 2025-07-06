@@ -1,0 +1,14 @@
+res://main.tscn
+res://mob.gdshader
+res://player.gd
+res://player.tscn
+res://mob.tscn
+res://hud.tscn
+res://default_projectile.tscn
+res://fast_enemy.tscn
+res://tank_enemy.tscn
+res://special_projectile.tscn
+res://special_projectile_acid.tscn
+res://special_projectile_blue.tscn
+res://mob.gd
+res://projectile.gd

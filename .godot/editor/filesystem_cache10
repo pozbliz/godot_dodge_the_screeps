@@ -1,20 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751797442
-default_projectile.tscn::PackedScene::3494341651651238893::1751790782::0::1::::<><><>0<>0<><>::uid://cvxdjncmot4gj::::res://projectile.gd<>uid://byma7b5dpclwh::::res://art/projectiles/Fire Effect and Bullet 16x16.png
-fast_enemy.tscn::PackedScene::8074118369364386689::1751790782::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
+::res://::1751798227
+default_projectile.tscn::PackedScene::3494341651651238893::1751798152::0::1::::<><><>0<>0<><>::uid://cvxdjncmot4gj::::res://projectile.gd<>uid://byma7b5dpclwh::::res://art/projectiles/Fire Effect and Bullet 16x16.png
+fast_enemy.tscn::PackedScene::8074118369364386689::1751797750::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
 hud.gd::GDScript/GDScript::7614923953783005108::1751723951::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::738722018957733812::1751790782::0::1::::<><><>0<>0<><>::uid://dgqyxj23yfk2o::::res://hud.gd<>uid://mum3choj6juk::::res://fonts/Xolonium-Regular.ttf
+hud.tscn::PackedScene::738722018957733812::1751797750::0::1::::<><><>0<>0<><>::uid://dgqyxj23yfk2o::::res://hud.gd<>uid://mum3choj6juk::::res://fonts/Xolonium-Regular.ttf
 icon.svg::CompressedTexture2D/CompressedTexture2D::5860995367808548599::1751460325::1751460338::1::::<><><>0<>0<>a76f2d72a94c28d58acca4595b52887c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.gd::GDScript::5742764118710254483::1751787474::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::1421742079074135930::1751790782::0::1::::<><><>0<>0<><>::uid://cn23qr3an6jx0::::res://main.gd<>uid://cxxn84dub02l7::::res://mob.tscn<>uid://dnbfsxxjeq402::::res://fast_enemy.tscn<>uid://t6kgbyb2bivw::::res://player.tscn<>uid://kr3v5e6ascb1::::res://hud.tscn<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://do306kwfvherx::::res://tank_enemy.tscn<>uid://gecih5aj1cwu::::res://art/gameover.wav
+main.tscn::PackedScene::1421742079074135930::1751797749::0::1::::<><><>0<>0<><>::uid://cn23qr3an6jx0::::res://main.gd<>uid://cxxn84dub02l7::::res://mob.tscn<>uid://dnbfsxxjeq402::::res://fast_enemy.tscn<>uid://t6kgbyb2bivw::::res://player.tscn<>uid://kr3v5e6ascb1::::res://hud.tscn<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://do306kwfvherx::::res://tank_enemy.tscn<>uid://gecih5aj1cwu::::res://art/gameover.wav
 mob.gd::GDScript::5510361602296659077::1751788961::0::1::::<>RigidBody2D<><>0<>0<><>::
-mob.gdshader::Shader::5363346226418106295::1751797409::0::1::::<><><>0<>0<><>::
-mob.tscn::PackedScene::6435515240231773850::1751790781::0::1::::<><><>0<>0<><>::uid://ckri36gxbpw7f::::res://mob.gd<>uid://hnlelhpqnvcb::::res://art/enemyFlyingAlt_1.png<>uid://dmorqjcpr6ap6::::res://art/enemyFlyingAlt_2.png<>uid://ciobr8iftctlv::::res://mob.gdshader<>uid://cy5x6b01yo73j::::res://art/enemySwimming_1.png<>uid://nbs1verldobt::::res://art/enemySwimming_2.png<>uid://bbqpfahh4l6rm::::res://art/enemyWalking_1.png<>uid://7w8aw2w268p0::::res://art/enemyWalking_2.png
-player.gd::GDScript::5381491775991905606::1751790743::0::1::::<>Area2D<><>0<>0<><>::
-player.tscn::PackedScene::1398201713869784280::1751790781::0::1::::<><><>0<>0<><>::uid://cho1ft8rmqyob::::res://art/playerGrey_up1.png<>uid://ciw3nbdoabfi1::::res://player.gd<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://b3nkynccyyl3p::::res://art/playerGrey_up2.png<>uid://cf7nqcuapgqi4::::res://special_projectile.tscn<>uid://dqdlhusqc3tmf::::res://art/playerGrey_walk1.png<>uid://con3soibo4x7h::::res://art/playerGrey_walk2.png
+mob.gdshader::Shader::5363346226418106295::1751798314::0::1::::<><><>0<>0<><>::
+mob.tscn::PackedScene::6435515240231773850::1751797749::0::1::::<><><>0<>0<><>::uid://ckri36gxbpw7f::::res://mob.gd<>uid://hnlelhpqnvcb::::res://art/enemyFlyingAlt_1.png<>uid://dmorqjcpr6ap6::::res://art/enemyFlyingAlt_2.png<>uid://ciobr8iftctlv::::res://mob.gdshader<>uid://cy5x6b01yo73j::::res://art/enemySwimming_1.png<>uid://nbs1verldobt::::res://art/enemySwimming_2.png<>uid://bbqpfahh4l6rm::::res://art/enemyWalking_1.png<>uid://7w8aw2w268p0::::res://art/enemyWalking_2.png
+player.gd::GDScript::5381491775991905606::1751798301::0::1::::<>Area2D<><>0<>0<><>::
+player.tscn::PackedScene::1398201713869784280::1751798313::0::1::::<><><>0<>0<><>::uid://cho1ft8rmqyob::::res://art/playerGrey_up1.png<>uid://ciw3nbdoabfi1::::res://player.gd<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://b3nkynccyyl3p::::res://art/playerGrey_up2.png<>uid://dqdlhusqc3tmf::::res://art/playerGrey_walk1.png<>uid://con3soibo4x7h::::res://art/playerGrey_walk2.png
 projectile.gd::GDScript::6294486681709575489::1751789664::0::1::::<>Area2D<><>0<>0<><>::
-special_projectile.tscn::PackedScene::5190663703277807501::1751790782::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://ljjvd0yl0qd8::::res://art/projectiles/Water Effect and Bullet 16x16.png
-tank_enemy.tscn::PackedScene::8201282283030362769::1751790782::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
+special_projectile_acid.tscn::PackedScene::6464426323182425227::1751798301::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn
+special_projectile.tscn::PackedScene::5190663703277807501::1751798024::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://ljjvd0yl0qd8::::res://art/projectiles/Water Effect and Bullet 16x16.png
+tank_enemy.tscn::PackedScene::8201282283030362769::1751797750::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
 ::res://art/::1751716117
 enemyFlyingAlt_1.png::CompressedTexture2D/CompressedTexture2D::518834435638984993::1751460244::1751460370::1::::<><><>0<>0<>2855066ef1443829a3ad66416ff1409c<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
 enemyFlyingAlt_2.png::CompressedTexture2D/CompressedTexture2D::8031490701377265029::1751460244::1751460370::1::::<><><>0<>0<>9bf0bec73ecf32f37bd1221177ee5ef6<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::

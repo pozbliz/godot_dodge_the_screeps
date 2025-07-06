@@ -22,8 +22,12 @@ func _ready() -> void:
 	$AnimatedSprite2D.scale = sprite_scale
 	$CollisionShape2D.scale = collision_scale
 	linear_velocity = Vector2(speed, 0).rotated(rotation)
+	
+	# Set shader
 	shader_material = $AnimatedSprite2D.material.duplicate()
 	$AnimatedSprite2D.material = shader_material
+	var tint_color = $AnimatedSprite2D.modulate
+	shader_material.set_shader_parameter("tint_color", tint_color)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

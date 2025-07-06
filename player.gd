@@ -3,24 +3,21 @@ extends Area2D
 signal hit
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
+@export var shoot_cooldown = 0.3
 @export var default_projectile_scene: PackedScene
-@export var special_projectile_scene: PackedScene
+@export var special_projectile_scenes: Array[PackedScene]
+var current_special_index := 0
 var screen_size # Size of the game window.
-var shoot_cooldown = 0.3  # seconds between shots
 var time_since_last_shot = 0.0
-var shoot_cooldown_special = 0.5
 var time_since_last_shot_special = 0.0
 
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	hide()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var velocity = Vector2.ZERO # The player's movement vector.
+	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("move_left"):
@@ -35,10 +32,12 @@ func _process(delta):
 		shoot()
 		time_since_last_shot = 0.0
 		
-		time_since_last_shot_special += delta
-	if Input.is_action_just_pressed("shoot_special") and time_since_last_shot_special >= shoot_cooldown_special:
+	if Input.is_action_just_pressed("next_special"):
+		next_special()
+		
+	time_since_last_shot_special += delta
+	if Input.is_action_just_pressed("shoot_special"):
 		shoot_special()
-		time_since_last_shot_special = 0.0
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -60,7 +59,7 @@ func _process(delta):
 		$AnimatedSprite2D.flip_v = velocity.y > 0
 
 func _on_body_entered(_body):
-	hide() # Player disappears after being hit.
+	hide()
 	hit.emit()
 	# Must be deferred as we can't change physics properties on a physics callback.
 	$CollisionShape2D.set_deferred("disabled", true)
@@ -79,11 +78,22 @@ func shoot():
 	projectile.velocity = Vector2.RIGHT.rotated(rotation) * projectile.speed
 	
 func shoot_special():
-	var projectile = special_projectile_scene.instantiate()
-	get_tree().current_scene.add_child(projectile)
-
-	projectile.global_position = global_position
-	projectile.rotation = rotation
-	projectile.velocity = Vector2.RIGHT.rotated(rotation) * projectile.speed
-
+	if special_projectile_scenes.is_empty():
+		return
+	var projectile = special_projectile_scenes[current_special_index].instantiate()
+	var cooldown = projectile.cooldown
 	
+	if time_since_last_shot_special >= projectile.cooldown:
+		get_tree().current_scene.add_child(projectile)
+
+		projectile.global_position = global_position
+		projectile.rotation = rotation
+		projectile.velocity = Vector2.RIGHT.rotated(rotation) * projectile.speed
+		
+		if projectile.rotate_visual_on_horizontal:
+			projectile.rotation += - PI / 2
+			
+		time_since_last_shot_special = 0.0
+
+func next_special():
+	current_special_index = (current_special_index + 1) % special_projectile_scenes.size()
