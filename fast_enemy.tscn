@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnbfsxxjeq402"]
+
+[ext_resource type="PackedScene" uid="uid://cxxn84dub02l7" path="res://mob.tscn" id="1_qckmv"]
+
+[node name="FastEnemy" instance=ExtResource("1_qckmv")]
+points = 2
+speed = 400
+sprite_scale = Vector2(0.6, 0.6)
+collision_scale = Vector2(0.6, 0.6)
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+modulate = Color(0.654688, 0.902021, 0.900596, 1)
+speed_scale = 1.3

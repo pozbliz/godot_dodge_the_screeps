@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cf7nqcuapgqi4"]
+
+[ext_resource type="PackedScene" uid="uid://bp1xkcytschfx" path="res://default_projectile.tscn" id="1_pvyxo"]
+[ext_resource type="Texture2D" uid="uid://ljjvd0yl0qd8" path="res://art/projectiles/Water Effect and Bullet 16x16.png" id="2_rqmtu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bq1uk"]
+atlas = ExtResource("2_rqmtu")
+region = Rect2(160, 160, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqw7m"]
+atlas = ExtResource("2_rqmtu")
+region = Rect2(176, 160, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6inb7"]
+atlas = ExtResource("2_rqmtu")
+region = Rect2(192, 160, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d07ll"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bq1uk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqw7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6inb7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Projectile" instance=ExtResource("1_pvyxo")]
+speed = 300
+damage = 3
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_d07ll")
+frame = 2
+frame_progress = 0.93087
