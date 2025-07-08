@@ -29,7 +29,7 @@ mob_scene = ExtResource("2_1bvp3")
 fast_enemy_scene = ExtResource("3_5vw27")
 tank_enemy_scene = ExtResource("4_kek77")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="GameBackground" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -66,6 +66,94 @@ parameters/looping = false
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lquwl")
+
+[node name="MainMenu" type="CanvasLayer" parent="."]
+
+[node name="MainMenuBackground" type="Panel" parent="MainMenu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -29.0
+offset_right = 129.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Dodge the Creeps!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartGameButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Start Game"
+
+[node name="OptionsButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="ExitGameButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Exit Game"
+
+[node name="OptionsMenu" type="CanvasLayer" parent="."]
+
+[node name="OptionsMenuBackground" type="Panel" parent="OptionsMenu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -29.0
+offset_right = 129.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="OptionsMenu/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameBackgroundOption" type="ColorPickerButton" parent="OptionsMenu/VBoxContainer"]
+layout_mode = 2
+text = "Background Color"
+
+[node name="DifficultyOption" type="OptionButton" parent="OptionsMenu/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Easy"
+popup/item_0/id = 0
+popup/item_1/text = "Medium"
+popup/item_1/id = 1
+popup/item_2/text = "Hard"
+popup/item_2/id = 2
+
+[node name="BackButton" type="Button" parent="OptionsMenu/VBoxContainer"]
+layout_mode = 2
+text = "Back"
 
 [connection signal="hit" from="Player" to="." method="game_overe"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

@@ -9,5 +9,5 @@ sprite_scale = Vector2(0.6, 0.6)
 collision_scale = Vector2(0.6, 0.6)
 
 [node name="AnimatedSprite2D" parent="." index="0"]
-modulate = Color(0.862187, 0.962947, 0.961436, 1)
+modulate = Color(0.215699, 0.613968, 0.741635, 1)
 speed_scale = 1.3

@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://cxxn84dub02l7" path="res://mob.tscn" id="1_ob6sc"]
 
 [node name="TankMob" instance=ExtResource("1_ob6sc")]
-modulate = Color(0.355456, 0.142191, 0.0737845, 1)
 health = 3
 points = 3
 speed = 100

@@ -8,8 +8,17 @@ var score
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$HUD.start_game.connect(new_game)
+	$MainMenu/VBoxContainer/StartGameButton.pressed.connect(on_start_game_button_pressed)
+	$MainMenu/VBoxContainer/OptionsButton.pressed.connect(on_options_button_pressed)
+	$OptionsMenu/VBoxContainer/BackButton.pressed.connect(on_back_button_pressed)
+	$MainMenu/VBoxContainer/ExitGameButton.pressed.connect(on_exit_game_button_pressed)
+	$OptionsMenu/VBoxContainer/GameBackgroundOption.color_changed.connect(on_game_background_option_color_changed)
 	$Player.hit.connect(game_over)
+	
+	$HUD.hide()
+	$GameBackground.hide()
+	$Player.hide()
+	$OptionsMenu.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -21,12 +30,18 @@ func game_over():
 	$Music.stop()
 	$HUD.show_game_over()
 	$DeathSound.play()
+	await get_tree().create_timer(1.0).timeout
+	$HUD.hide()
+	$MainMenu.show()
 
 func new_game():
 	score = 0
 	get_tree().call_group("mobs", "queue_free")
+	$GameBackground.show()
 	$Player.start($StartPosition.position)
+	$Player.show()
 	$StartTimer.start()
+	$HUD.show()
 	$HUD.update_score(score)
 	$Music.play()
 	$HUD.show_message("Get Ready")
@@ -74,3 +89,21 @@ func _increase_score(points):
 func _on_start_timer_timeout():
 	$MobTimer.start()
 	$ScoreTimer.start()
+	
+func on_start_game_button_pressed():
+	$MainMenu.hide()
+	new_game()
+	
+func on_options_button_pressed():
+	$MainMenu.hide()
+	$OptionsMenu.show()
+	
+func on_game_background_option_color_changed(color):
+	$GameBackground.color = color
+	
+func on_back_button_pressed():
+	$OptionsMenu.hide()
+	$MainMenu.show()
+	
+func on_exit_game_button_pressed():
+	get_tree().quit()

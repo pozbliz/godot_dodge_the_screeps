@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cxxn84dub02l7"]
+[gd_scene load_steps=16 format=3 uid="uid://cxxn84dub02l7"]
 
 [ext_resource type="Script" uid="uid://ckri36gxbpw7f" path="res://mob.gd" id="1_1qmh0"]
 [ext_resource type="Texture2D" uid="uid://hnlelhpqnvcb" path="res://art/enemyFlyingAlt_1.png" id="1_b3mxk"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://nbs1verldobt" path="res://art/enemySwimming_2.png" id="4_ieysi"]
 [ext_resource type="Texture2D" uid="uid://bbqpfahh4l6rm" path="res://art/enemyWalking_1.png" id="5_cixyi"]
 [ext_resource type="Texture2D" uid="uid://7w8aw2w268p0" path="res://art/enemyWalking_2.png" id="6_7ulmv"]
+[ext_resource type="AudioStream" uid="uid://dci6026xrbcqs" path="res://sounds/SE-Collision_08C.ogg" id="9_ieysi"]
+[ext_resource type="AudioStream" uid="uid://tmfxdt25smfq" path="res://sounds/SE-Collision_01.ogg" id="10_cixyi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ieysi"]
 shader = ExtResource("2_gfurk")
@@ -54,6 +56,12 @@ animations = [{
 radius = 36.0
 height = 98.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfurk"]
+bg_color = Color(0.158847, 0.00640121, 0.0180755, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ieysi"]
+bg_color = Color(0.803432, 0.187144, 0.214009, 1)
+
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
 collision_layer = 2
 collision_mask = 5
@@ -74,3 +82,22 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_jbnni")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[node name="HPBar" type="ProgressBar" parent="."]
+offset_left = 58.0
+offset_top = -42.0
+offset_right = 142.0
+offset_bottom = -33.0
+rotation = 1.5708
+theme_override_styles/background = SubResource("StyleBoxFlat_gfurk")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ieysi")
+max_value = 1.0
+value = 1.0
+show_percentage = false
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_ieysi")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_cixyi")
+volume_db = -5.0

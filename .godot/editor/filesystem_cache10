@@ -1,21 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751798227
-default_projectile.tscn::PackedScene::3494341651651238893::1751798152::0::1::::<><><>0<>0<><>::uid://cvxdjncmot4gj::::res://projectile.gd<>uid://byma7b5dpclwh::::res://art/projectiles/Fire Effect and Bullet 16x16.png
-fast_enemy.tscn::PackedScene::8074118369364386689::1751797750::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
+::res://::1751982190
+default_projectile.tscn::PackedScene/PackedScene::3494341651651238893::1751898819::0::1::::<><><>0<>0<><>::uid://cvxdjncmot4gj::::res://projectile.gd<>uid://byma7b5dpclwh::::res://art/projectiles/Fire Effect and Bullet 16x16.png
+fast_enemy.tscn::PackedScene/PackedScene::8074118369364386689::1751898819::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
 hud.gd::GDScript/GDScript::7614923953783005108::1751723951::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::738722018957733812::1751797750::0::1::::<><><>0<>0<><>::uid://dgqyxj23yfk2o::::res://hud.gd<>uid://mum3choj6juk::::res://fonts/Xolonium-Regular.ttf
+hud.tscn::PackedScene/PackedScene::738722018957733812::1751898819::0::1::::<><><>0<>0<><>::uid://dgqyxj23yfk2o::::res://hud.gd<>uid://mum3choj6juk::::res://fonts/Xolonium-Regular.ttf
 icon.svg::CompressedTexture2D/CompressedTexture2D::5860995367808548599::1751460325::1751460338::1::::<><><>0<>0<>a76f2d72a94c28d58acca4595b52887c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.gd::GDScript::5742764118710254483::1751787474::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::1421742079074135930::1751797749::0::1::::<><><>0<>0<><>::uid://cn23qr3an6jx0::::res://main.gd<>uid://cxxn84dub02l7::::res://mob.tscn<>uid://dnbfsxxjeq402::::res://fast_enemy.tscn<>uid://t6kgbyb2bivw::::res://player.tscn<>uid://kr3v5e6ascb1::::res://hud.tscn<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://do306kwfvherx::::res://tank_enemy.tscn<>uid://gecih5aj1cwu::::res://art/gameover.wav
-mob.gd::GDScript::5510361602296659077::1751788961::0::1::::<>RigidBody2D<><>0<>0<><>::
-mob.gdshader::Shader::5363346226418106295::1751798314::0::1::::<><><>0<>0<><>::
-mob.tscn::PackedScene::6435515240231773850::1751797749::0::1::::<><><>0<>0<><>::uid://ckri36gxbpw7f::::res://mob.gd<>uid://hnlelhpqnvcb::::res://art/enemyFlyingAlt_1.png<>uid://dmorqjcpr6ap6::::res://art/enemyFlyingAlt_2.png<>uid://ciobr8iftctlv::::res://mob.gdshader<>uid://cy5x6b01yo73j::::res://art/enemySwimming_1.png<>uid://nbs1verldobt::::res://art/enemySwimming_2.png<>uid://bbqpfahh4l6rm::::res://art/enemyWalking_1.png<>uid://7w8aw2w268p0::::res://art/enemyWalking_2.png
-player.gd::GDScript::5381491775991905606::1751798301::0::1::::<>Area2D<><>0<>0<><>::
-player.tscn::PackedScene::1398201713869784280::1751798313::0::1::::<><><>0<>0<><>::uid://cho1ft8rmqyob::::res://art/playerGrey_up1.png<>uid://ciw3nbdoabfi1::::res://player.gd<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://b3nkynccyyl3p::::res://art/playerGrey_up2.png<>uid://dqdlhusqc3tmf::::res://art/playerGrey_walk1.png<>uid://con3soibo4x7h::::res://art/playerGrey_walk2.png
-projectile.gd::GDScript::6294486681709575489::1751789664::0::1::::<>Area2D<><>0<>0<><>::
-special_projectile_acid.tscn::PackedScene::6464426323182425227::1751798301::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn
-special_projectile.tscn::PackedScene::5190663703277807501::1751798024::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://ljjvd0yl0qd8::::res://art/projectiles/Water Effect and Bullet 16x16.png
-tank_enemy.tscn::PackedScene::8201282283030362769::1751797750::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
+main.gd::GDScript/GDScript::5742764118710254483::1751787474::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene/PackedScene::1421742079074135930::1751898819::0::1::::<><><>0<>0<><>::uid://cn23qr3an6jx0::::res://main.gd<>uid://cxxn84dub02l7::::res://mob.tscn<>uid://dnbfsxxjeq402::::res://fast_enemy.tscn<>uid://t6kgbyb2bivw::::res://player.tscn<>uid://kr3v5e6ascb1::::res://hud.tscn<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://do306kwfvherx::::res://tank_enemy.tscn<>uid://gecih5aj1cwu::::res://art/gameover.wav
+mob.gd::GDScript/GDScript::5510361602296659077::1751898488::0::1::::<>RigidBody2D<><>0<>0<><>::
+mob.gdshader::Shader/Shader::5363346226418106295::1751899047::0::1::::<><><>0<>0<><>::
+mob.tscn::PackedScene/PackedScene::6435515240231773850::1751899044::0::1::::<><><>0<>0<><>::uid://ckri36gxbpw7f::::res://mob.gd<>uid://hnlelhpqnvcb::::res://art/enemyFlyingAlt_1.png<>uid://dmorqjcpr6ap6::::res://art/enemyFlyingAlt_2.png<>uid://ciobr8iftctlv::::res://mob.gdshader<>uid://cy5x6b01yo73j::::res://art/enemySwimming_1.png<>uid://nbs1verldobt::::res://art/enemySwimming_2.png<>uid://bbqpfahh4l6rm::::res://art/enemyWalking_1.png<>uid://7w8aw2w268p0::::res://art/enemyWalking_2.png
+player.gd::GDScript/GDScript::5381491775991905606::1751897685::0::1::::<>Area2D<><>0<>0<><>::
+player.tscn::PackedScene/PackedScene::1398201713869784280::1751898818::0::1::::<><><>0<>0<><>::uid://cho1ft8rmqyob::::res://art/playerGrey_up1.png<>uid://ciw3nbdoabfi1::::res://player.gd<>uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://b3nkynccyyl3p::::res://art/playerGrey_up2.png<>uid://dqdlhusqc3tmf::::res://art/playerGrey_walk1.png<>uid://cf7nqcuapgqi4::::res://special_projectile_blue.tscn<>uid://con3soibo4x7h::::res://art/playerGrey_walk2.png<>uid://cydoflt2ntapf::::res://special_projectile_acid.tscn
+projectile.gd::GDScript/GDScript::6294486681709575489::1751809218::0::1::::<>Area2D<><>0<>0<><>::
+special_projectile_acid.tscn::PackedScene/PackedScene::6464426323182425227::1751898819::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://c3adpqls2ggt3::::res://art/projectiles/Green Effect and Bullet 16x16.png
+special_projectile_blue.tscn::PackedScene/PackedScene::5190663703277807501::1751898819::0::1::::<><><>0<>0<><>::uid://bp1xkcytschfx::::res://default_projectile.tscn<>uid://ljjvd0yl0qd8::::res://art/projectiles/Water Effect and Bullet 16x16.png
+tank_enemy.tscn::PackedScene/PackedScene::8201282283030362769::1751898819::0::1::::<><><>0<>0<><>::uid://cxxn84dub02l7::::res://mob.tscn
 ::res://art/::1751716117
 enemyFlyingAlt_1.png::CompressedTexture2D/CompressedTexture2D::518834435638984993::1751460244::1751460370::1::::<><><>0<>0<>2855066ef1443829a3ad66416ff1409c<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
 enemyFlyingAlt_2.png::CompressedTexture2D/CompressedTexture2D::8031490701377265029::1751460244::1751460370::1::::<><><>0<>0<>9bf0bec73ecf32f37bd1221177ee5ef6<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
@@ -38,3 +38,27 @@ Water Effect and Bullet 16x16.png::CompressedTexture2D/CompressedTexture2D::7912
 FONTLOG.txt::TextFile/TextFile::-1::1751460244::0::1::::<><><>0<>0<><>::
 LICENSE.txt::TextFile/TextFile::-1::1751460244::0::1::::<><><>0<>0<><>::
 Xolonium-Regular.ttf::FontFile/FontFile::884332401389802462::1751460244::1751460370::1::::<><><>0<>0<>2a4ecda124914a72c6a881808f80e67a<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
+::res://sounds/::1751982200
+SE-Collision_01.ogg::AudioStreamOggVorbis::1358705408583879930::1751982200::1751982201::1::::<><><>0<>0<>1d941c345affe0f0745b510111024900<>res://.godot/imported/SE-Collision_01.ogg-f630b72c9587bd917d629d48ba374dc7.oggvorbisstr::
+SE-Collision_02.ogg::AudioStreamOggVorbis::6384719102037609019::1751982200::1751982201::1::::<><><>0<>0<>59d5a621d67d323a276607fb6e5e16cd<>res://.godot/imported/SE-Collision_02.ogg-676e5cf8840415fba0988a33a310e4a5.oggvorbisstr::
+SE-Collision_03.ogg::AudioStreamOggVorbis::8588155176744463982::1751982200::1751982201::1::::<><><>0<>0<>cf797ea138ff14b584f73ba8267410e2<>res://.godot/imported/SE-Collision_03.ogg-b1eb42998242bb05cac14fc58ea33fa5.oggvorbisstr::
+SE-Collision_04A.ogg::AudioStreamOggVorbis::6737545264490031895::1751982200::1751982201::1::::<><><>0<>0<>b68d77995f5c58e950f21c2068788c84<>res://.godot/imported/SE-Collision_04A.ogg-209b676854283a351a729c4951e38810.oggvorbisstr::
+SE-Collision_04B.ogg::AudioStreamOggVorbis::2317726360524873941::1751982200::1751982201::1::::<><><>0<>0<>11e4ca6e0fe563e6fad838e1d6064aba<>res://.godot/imported/SE-Collision_04B.ogg-beaa16b493166bfa49f343f31f10c9e6.oggvorbisstr::
+SE-Collision_05A.ogg::AudioStreamOggVorbis::7561162931160033627::1751982200::1751982201::1::::<><><>0<>0<>45204465266605ad1e7f326a40aef0b6<>res://.godot/imported/SE-Collision_05A.ogg-71ffa2608d36e19a3407cfa33ec34c81.oggvorbisstr::
+SE-Collision_05B.ogg::AudioStreamOggVorbis::5899393501644954786::1751982200::1751982201::1::::<><><>0<>0<>9cb7685ff96122cdce4b7ed7bcb886a3<>res://.godot/imported/SE-Collision_05B.ogg-994309ba2ef3e3bd51caac55c0617033.oggvorbisstr::
+SE-Collision_05C.ogg::AudioStreamOggVorbis::6423175811002439976::1751982200::1751982201::1::::<><><>0<>0<>8e9bcc5f330691fa66b6d647afd31df7<>res://.godot/imported/SE-Collision_05C.ogg-46885c1b624a453189e4da54cc0ad66f.oggvorbisstr::
+SE-Collision_06A.ogg::AudioStreamOggVorbis::8165860535520731222::1751982200::1751982201::1::::<><><>0<>0<>8cb49badac292cac971f4fc394db3607<>res://.godot/imported/SE-Collision_06A.ogg-209548b9821e19bf2c0bf361746afac0.oggvorbisstr::
+SE-Collision_06B.ogg::AudioStreamOggVorbis::7181655370890313835::1751982200::1751982201::1::::<><><>0<>0<>faee7badaac21cbfb33a3b28005fcfa8<>res://.godot/imported/SE-Collision_06B.ogg-b309cbc25f48c0d60180fbf327a459bf.oggvorbisstr::
+SE-Collision_06C.ogg::AudioStreamOggVorbis::2013647104040481179::1751982200::1751982201::1::::<><><>0<>0<>ece36a5f891f6b4fc64f113aece234be<>res://.godot/imported/SE-Collision_06C.ogg-1ff737458c747b7f4fd977dbc784f23f.oggvorbisstr::
+SE-Collision_07A.ogg::AudioStreamOggVorbis::23883075933623877::1751982200::1751982201::1::::<><><>0<>0<>9aee04e54a2e55d84fac876907a25b0f<>res://.godot/imported/SE-Collision_07A.ogg-d8f5b1938dd648d2e87cc95b18f14e8b.oggvorbisstr::
+SE-Collision_07B.ogg::AudioStreamOggVorbis::2804619836415315037::1751982200::1751982201::1::::<><><>0<>0<>bd2fae096975492dd5793f5231c82e1f<>res://.godot/imported/SE-Collision_07B.ogg-85ea33d2e4be57c6bc33db889154e5b1.oggvorbisstr::
+SE-Collision_07C.ogg::AudioStreamOggVorbis::8559385917075917682::1751982200::1751982201::1::::<><><>0<>0<>a57ca84db8799f4470c070c8714cdcd7<>res://.godot/imported/SE-Collision_07C.ogg-80ab91e54be508b1601e819a47294a30.oggvorbisstr::
+SE-Collision_08A.ogg::AudioStreamOggVorbis::9194911127180183508::1751982200::1751982201::1::::<><><>0<>0<>a75c970ed7bf1b5c16d91af96faeb4b8<>res://.godot/imported/SE-Collision_08A.ogg-c64f642283bae6d0f70293ad7c9ad039.oggvorbisstr::
+SE-Collision_08B.ogg::AudioStreamOggVorbis::2679433411449485700::1751982200::1751982201::1::::<><><>0<>0<>13d785cfd7ac2a404ad305ae7dd7052a<>res://.godot/imported/SE-Collision_08B.ogg-eb483b0a18ca784bed348f6981b774f8.oggvorbisstr::
+SE-Collision_08C.ogg::AudioStreamOggVorbis::7318083099098394354::1751982200::1751982201::1::::<><><>0<>0<>c77ab112f2eff07937b0feb141c9c8ee<>res://.godot/imported/SE-Collision_08C.ogg-e42a452b2ab307fcf5d3ee752fcb4224.oggvorbisstr::
+SE-Collision_09A.ogg::AudioStreamOggVorbis::9159220249013728314::1751982200::1751982201::1::::<><><>0<>0<>d720b036c5ad901e4f1efe3cdb7d47a5<>res://.godot/imported/SE-Collision_09A.ogg-a8933364d9c3ed37ea119dbe061b39fb.oggvorbisstr::
+SE-Collision_09B.ogg::AudioStreamOggVorbis::8716530640680559457::1751982200::1751982201::1::::<><><>0<>0<>c1d328e2b9bc86224fa7869ebc091a97<>res://.godot/imported/SE-Collision_09B.ogg-c1e1cc23107424e866369776b45e62a7.oggvorbisstr::
+SE-Collision_10A.ogg::AudioStreamOggVorbis::5696373764274999747::1751982200::1751982201::1::::<><><>0<>0<>e908136ef9930bcc1493b5b141eced9a<>res://.godot/imported/SE-Collision_10A.ogg-14350003c1ebd12ee8dc18675a902b5e.oggvorbisstr::
+SE-Collision_10B.ogg::AudioStreamOggVorbis::7689808887531956551::1751982200::1751982201::1::::<><><>0<>0<>556db4b51c478d73a84504b9e8c549a2<>res://.godot/imported/SE-Collision_10B.ogg-932b60398a2ce362aada54aed0c3cf7e.oggvorbisstr::
+SE-Collision_10C.ogg::AudioStreamOggVorbis::3865114584892740741::1751982200::1751982201::1::::<><><>0<>0<>40d950b0b682d72de114114e7c1e263a<>res://.godot/imported/SE-Collision_10C.ogg-a21a800064099e9fcae5b9a2af9578d0.oggvorbisstr::
+SE-Collision_10D.ogg::AudioStreamOggVorbis::8827088532287545671::1751982200::1751982201::1::::<><><>0<>0<>d74a1cace8adf8eeba240b72a53a3ac2<>res://.godot/imported/SE-Collision_10D.ogg-a1e5a4311aaf9131fc23567764ef2320.oggvorbisstr::

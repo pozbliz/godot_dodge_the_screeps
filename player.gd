@@ -71,6 +71,7 @@ func start(pos):
 	
 func shoot():
 	var projectile = default_projectile_scene.instantiate()
+	projectile.visible = true
 	get_tree().current_scene.add_child(projectile)
 
 	projectile.global_position = global_position
@@ -81,6 +82,7 @@ func shoot_special():
 	if special_projectile_scenes.is_empty():
 		return
 	var projectile = special_projectile_scenes[current_special_index].instantiate()
+	projectile.visible = true
 	var cooldown = projectile.cooldown
 	
 	if time_since_last_shot_special >= projectile.cooldown:

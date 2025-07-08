@@ -43,6 +43,7 @@ animations = [{
 radius = 24.0208
 
 [node name="Projectile" type="Area2D"]
+visible = false
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_bqb2k")

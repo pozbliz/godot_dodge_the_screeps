@@ -9,7 +9,7 @@ void fragment() {
 
     if (hit_blink) {
         // Blink white while preserving alpha
-        COLOR = mix(tex_color, vec4(1.0, 1.0, 1.0, tex_color.a), 0.7);
+        COLOR = mix(tex_color, vec4(1.0, 1.0, 1.0, tex_color.a), 1.0);
     } else {
         COLOR = tex_color;
     }

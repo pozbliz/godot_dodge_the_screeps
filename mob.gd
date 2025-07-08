@@ -22,6 +22,10 @@ func _ready() -> void:
 	$AnimatedSprite2D.scale = sprite_scale
 	$CollisionShape2D.scale = collision_scale
 	linear_velocity = Vector2(speed, 0).rotated(rotation)
+	var hp_bar = $HPBar
+	hp_bar.max_value = health
+	hp_bar.value = health
+	hp_bar.visible = false
 	
 	# Set shader
 	shader_material = $AnimatedSprite2D.material.duplicate()
@@ -36,19 +40,32 @@ func _process(delta: float) -> void:
 func take_damage(amount):
 	if is_blinking:
 		return
-	health -= amount
+	health -= amount	
 	
 	if health > 0:
+		$HitSound.pitch_scale = randf_range(0.9, 1.1)
+		$HitSound.play()
 		await _blink()
+		var hp_bar = $HPBar
+		hp_bar.visible = true
+		hp_bar.value = health
+		
 	else:
+		# Detach and play death sound separately
+		var death_sound = $DeathSound.duplicate()
+		get_tree().current_scene.add_child(death_sound)
+		death_sound.global_position = global_position
+		death_sound.play()
+		
 		await _blink()
 		enemy_died.emit()
 		queue_free()
+		
+		death_sound.connect("finished", death_sound.queue_free)
 
 func _blink() -> void:
 	is_blinking = true
-	var sprite = $AnimatedSprite2D
-	var material := sprite.material as ShaderMaterial
+	var material := $AnimatedSprite2D.material as ShaderMaterial
 
 	if material:
 		material.set_shader_parameter("hit_blink", true)
